@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import Link from '../ui/Link';
 
-const Header = ({ firstName, lastName, program, website }) => {
+const Header = ({ firstName, lastName, program }) => {
 
   const { nickname, term } = program;
 
@@ -13,7 +13,7 @@ const Header = ({ firstName, lastName, program, website }) => {
         <span style={style.span}>{lastName.toUpperCase()}</span>
       </h1>
       <span style={style.program}>
-        {term} {nickname} | <Link to={website.link} style={{padding: 0}}>{website.name}</Link>
+        {term} {nickname}
       </span>
     </section>
   );
