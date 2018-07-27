@@ -18,7 +18,6 @@ const style = {
     flex: '1 1 auto',
     marginTop: '1rem',
     padding: '1rem 1rem 0 1rem',
-    borderTop: '1px solid black',
     height: '3rem',
     display: 'flex',
     justifyContent: 'space-between'
