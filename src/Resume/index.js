@@ -41,32 +41,24 @@ const DATA = {
         proficiency: 0.5,
       },
       {
-        name: 'C#',
-        proficiency: 0.5,
-      },
-      {
-        name: 'Lua',
-        proficiency: 0.5,
-      },
-      {
         name: 'BASH',
         proficiency: 0.5,
       },
     ],
-    databases: ['Apache Cassandra', 'Redshift/PostgreSQL', 'MySQL'],
+    databases: ['Apache Cassandra', 'PostgreSQL/Redshift', 'MySQL'],
     libraries: [
       'Gin',
       'Ginkgo/Gomega',
       'Flask',
       'Falcon',
-      'Django',
+      'Django REST Framework',
       'Locust',
       'React',
       'Redux',
       'Socket.io',
     ],
     tools: [
-      'AWS (Redshift, S3, Lambda, EC2, SQS, CloudFront, CloudWatch)',
+      'AWS (Redshift, S3, Lambda, EC2, SQS, CloudFront, CloudWatch, Beanstalk)',
       'Joyent Cloud (Joyent Docker, Manta)',
       'Docker',
       'Docker Compose',
@@ -126,7 +118,7 @@ const DATA = {
     companies: [
       {
         name: 'GlobalLogic',
-        title: 'Junior Software Engineer',
+        title: 'Software Engineer',
         color: 'rgb(77, 100, 141)',
         date: 'since January 2017',
         location: 'Lviv, Ukraine',
@@ -135,8 +127,7 @@ const DATA = {
           'Load balancing, cluster management, monitoring services with <b>Openresty</b>, <b>Prometheus</b>, <b>Grafana</b>',
           'Setting up <b>Apache Cassandra</b> cluster',
           'Implementing microservices for handling large amount (>800 events/sec) of analytics data using <b>Gin</b>',
-          'Load testing existing services with <b>Locust</b> framework',
-          'Implementing web portal for IoT platform with main focus on energy consumption using <b>React/Redux</b>',
+          'Implementing web portal for IoT platform with main focus on energy consumption using <b>React/Redux</b> and <b>Django REST Framework</b>',
         ],
       },
       {
@@ -152,12 +143,20 @@ const DATA = {
     ],
     projects: [
       {
+        name: 'Energy in Schools',
+        tools: ['Python 3.6, Django REST Framework, Celery, PostgreSQL, React/Redux, React Material UI'],
+        achievements: [
+          'Implemented REST API using <b>Django REST Framework</b> to fetch energy consumption data from different energy provider',
+          'Integrated with big IoT platform to control different smart devices at schools',
+          'Implemented new features in framework for creating programming experiences for beginners',
+        ],
+      },
+      {
         name: 'MusicHub',
         tools: ['Python 3.6, Falcon, Elassandra, React/Redux, React Material UI, Docker'],
         achievements: [
           'Implemented REST API using <b>Falcon</b> for web application to fetch songs from different streaming services for better songs/playlists sharing experience.',
           'Created <b>Telegram</b> messenger bot with inline song search mode.',
-          'Has small experience with <b>Elasticsearch</b> for songs search',
           'Developed web application using <b>React/Redux</b> and <b>React Material UI</b> components library',
         ],
       },
