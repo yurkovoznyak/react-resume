@@ -3,7 +3,7 @@ import Languages from './Languages';
 import SidebarList from './SidebarList';
 import ContactLinks from './ContactLinks';
 import HorizontalRule from '../ui/HorizontalRule';
-import Education from './Education';
+import Education from './Education.jsx';
 
 const Sidebar = ({ data }) => (
   <section style={style.main}>
@@ -16,10 +16,7 @@ const Sidebar = ({ data }) => (
       <SidebarList title="+ INTERESTS" items={data.interests} separator={'<br/>'} />
     </div>
     <div>
-      <Education
-        university={data.education.university}
-        degree={data.education.degree}
-        duration={data.education.duration} />
+      <Education universities={data.education} />
     </div>
   </section>
 );
