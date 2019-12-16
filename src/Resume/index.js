@@ -25,12 +25,7 @@ const DATA = {
     education: [
       {
         name: 'Lviv Polytechnic National University',
-        duration: 'Sept 2014 - June 2018',
-        degree: 'Bachelor of Software Engineering',
-      },
-      {
-        name: 'Lviv Polytechnic National University',
-        duration: 'Sept 2018 - now',
+        duration: 'Sep 2014 - Dec 2019',
         degree: 'Master of Software Engineering',
       },
     ],
@@ -44,26 +39,25 @@ const DATA = {
         proficiency: 0.6,
       },
       {
-        name: 'JavaScript/Node.js',
+        name: 'JavaScript',
         proficiency: 0.5,
       },
     ],
-    databases: ['Apache Cassandra', 'PostgreSQL/Redshift', 'MySQL'],
+    databases: ['PostgreSQL/Redshift', 'Apache Cassandra', 'Redis'],
     libraries: [
-      'Gin',
-      'Ginkgo/Gomega',
-      'gRPC',
-      'Flask',
-      'Falcon',
       'Django REST Framework',
-      'Locust',
+      'Flask',
+      'gRPC',
+      'Gin',
       'React',
       'Redux',
-      'Socket.io',
+      'Ginkgo/Gomega',
+      'Falcon',
+      'Locust',
     ],
     tools: [
       'AWS (Redshift, S3, Lambda, EC2, SQS, CloudFront, CloudWatch, Beanstalk)',
-      'GCP (Kubernetes Engine, SQL, BigQuery, Pub/Sub, Cloud Scheduler, Storage)',
+      'GCP (Kubernetes Engine, Cloud SQL, BigQuery, Pub/Sub, Cloud Scheduler, Storage, Cloud functions)',
       'Joyent Cloud (Joyent Docker, Manta)',
       'Docker',
       'Docker Compose',
@@ -138,30 +132,22 @@ const DATA = {
         date: 'January 2017 - now',
         location: 'Lviv, Ukraine',
         achievements: [
-          'Support and new features development for financial data reporting application written in <b>Golang</b> and <b>Python</b>',
+          'Support and new features development for advertising data reporting application written in <b>Golang</b> and <b>Python</b>',
           'Implementing web portal for IoT platform with main focus on energy consumption using <b>React/Redux</b> and <b>Django REST Framework</b>',
           'Implementing microservices in <b>Golang</b> for handling large amount (>800 events/sec) of analytics data',
           'Setting up infrastructure for microservices in <b>Joyent Cloud</b> using <b>Docker</b>, <b>Docker Compose</b>',
           'Load balancing, cluster management, monitoring services with <b>Openresty</b>, <b>Prometheus</b>, <b>Grafana</b>',
         ],
       },
-      {
-        name: 'Freelance',
-        color: 'rgb(77, 100, 141)',
-        title: 'Software Engineer',
-        date: 'June 2016 - September 2016',
-        location: 'Lviv, Ukraine',
-        achievements: [
-          'Web scrapping data from online stores and saving into CSV using Python <b>Selenium</b> and <b>BeautifulSoup</b>',
-        ],
-      },
     ],
     projects: [
       {
-        name: 'Financial data reporting tool',
-        tools: ['Golang, Python 3, gRPC, CloudSQL (Postgres), Kubernetes, GCP'],
+        name: 'Advertising data reporting tool',
+        tools: ['Golang, Python 2/3, gRPC, CloudSQL (Postgres), Kubernetes, GCP'],
         achievements: [
-          'Various improvements of existing codebase and bugfixing',
+          'Adapt existing product to work with the new APIs',
+          'Reduced performance issues and made applications more reliable and stable',
+          'Moved project to <b>Python 3</b> implemented various improvements of existing codebase and bugfixing',
         ],
       },
       {
@@ -172,16 +158,6 @@ const DATA = {
           'Used <b>Celery</b> jobs to fetch energy consumption data from different energy providers',
           'Integrated with big IoT platform to control different smart devices at schools',
           'Implemented new features in a framework for creating programming experiences for beginners',
-        ],
-      },
-      {
-        name: 'MusicHub',
-        tools: ['Python 3, Falcon, Elassandra, React/Redux, React Material UI, Docker', 'Joyent Cloud'],
-        achievements: [
-          'Implemented REST API using <b>Falcon</b> framework',
-          'Fetched songs from different music streaming services for better songs/playlists sharing experience.',
-          'Created <b>Telegram</b> messenger bot with inline song search mode.',
-          'Developed web application using <b>React/Redux</b> and <b>React Material UI</b> components library',
         ],
       },
       {
@@ -197,7 +173,7 @@ const DATA = {
         name: 'CloudCMS',
         tools: ['Python 2, Openresty, Docker, Docker Compose, PHP 7.0, Lua', 'Joyent Cloud'],
         achievements: [
-          'Splitted monolith application to smaller services, running in Docker',
+          'Split monolith application to smaller services, running in Docker',
           'Implemented logic for load balancing, cluster managing and monitoring',
           'Created custom <b>Laravel ORM</b> for <b>Cassandra</b>',
         ],

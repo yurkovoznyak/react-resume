@@ -14,8 +14,6 @@ const Sidebar = ({ data }) => (
       <SidebarList title="+ DATABASES" items={data.databases} />
       <SidebarList title="+ TOOLS" items={data.tools} />
       <SidebarList title="+ INTERESTS" items={data.interests} separator={'<br/>'} />
-    </div>
-    <div>
       <Education universities={data.education} />
     </div>
   </section>
