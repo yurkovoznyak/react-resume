@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import Container from '../ui/Container';
 import Sidebar from './Sidebar';
 import Main from './Main';
@@ -12,9 +12,9 @@ class Resume extends Component {
         <Header {...DATA.main} />
         <div style={{ display: 'flex' }}>
           <Main {...DATA.main} />
-          <Sidebar data={DATA.sidebar}/>
+          <Sidebar data={DATA.sidebar} />
         </div>
-        <Footer links={DATA.footerLinks}/>
+        <Footer links={DATA.footerLinks} />
       </Container>
     );
   }
@@ -25,8 +25,13 @@ const DATA = {
     education: [
       {
         name: 'Lviv Polytechnic National University',
-        duration: 'Sep 2014 - Dec 2019',
+        duration: 'Sept 2018 - Dec 2019',
         degree: 'Master of Software Engineering',
+      },
+      {
+        name: 'Lviv Polytechnic National University',
+        duration: 'Sept 2014 - June 2018',
+        degree: 'Bachelor of Software Engineering',
       },
     ],
     languages: [
@@ -43,21 +48,19 @@ const DATA = {
         proficiency: 0.5,
       },
     ],
-    databases: ['PostgreSQL/Redshift', 'Apache Cassandra', 'Redis'],
+    databases: ['Google Firestore', 'BigQuery', 'Redis', 'PostgreSQL', 'Amazon Redshift', 'Apache Cassandra'],
     libraries: [
       'Django REST Framework',
       'Flask',
+      'Fast API',
       'gRPC',
       'Gin',
-      'React',
-      'Redux',
-      'Ginkgo/Gomega',
-      'Falcon',
+      'React/Redux',
       'Locust',
     ],
     tools: [
-      'AWS (Redshift, S3, Lambda, EC2, SQS, CloudFront, CloudWatch, Beanstalk)',
-      'GCP (Kubernetes Engine, Cloud SQL, BigQuery, Pub/Sub, Cloud Scheduler, Storage, Cloud functions)',
+      'AWS (Redshift, S3, Lambda, EC2, CloudFront, CloudWatch, Beanstalk)',
+      'GCP (GKE, AppEngine BigQuery, Pub/Sub, SQL, Storage, Cloud [Scheduler, Functions], Firestore, Memorystore)',
       'Joyent Cloud (Joyent Docker, Manta)',
       'Docker',
       'Docker Compose',
@@ -72,7 +75,7 @@ const DATA = {
     interests: [
       'I <b>learn</b> about web and new technologies.',
       'I <b>dominate</b> in ping pong.',
-      'I <b>love</b> watching films, traveling and listening music.',
+      'I <b>love</b> watching movies, traveling and listening music.',
     ],
     links: [
       {
@@ -88,16 +91,16 @@ const DATA = {
         link: 'mailto:yurko.voznyak@gmail.com',
       },
       {
-        name: 'GitHub',
-        faClass: 'fa fa-github',
-        display: 'github.com/uraniun',
-        link: 'https://github.com/uraniun',
-      },
-      {
         name: 'Linkedin',
         faClass: 'fa fa-linkedin',
         display: 'linkedin.com/in/yuriyvoznyak',
         link: 'https://www.linkedin.com/in/yuriyvoznyak',
+      },
+      {
+        name: 'GitHub',
+        faClass: 'fa fa-github',
+        display: 'github.com/uraniun',
+        link: 'https://github.com/uraniun',
       },
       {
         name: 'Facebook',
@@ -111,7 +114,7 @@ const DATA = {
   main: {
     firstName: 'Yuriy',
     lastName: 'Voznyak',
-    profileDescription: 'Talented software engineer with 3 years of professional experience building web applications. <br/>' +
+    profileDescription: 'Talented software engineer with 4 years of professional experience building web applications. <br/>' +
       'Expertise in coding, troubleshooting and debugging in Python, Golang, JavaScript. <br/>' +
       'I\'m responsible, self-motivated, opened for new skills, active team player. ' +
       'Also, I have such skills as accuracy and attention to details, tolerant to stressed situations.',
@@ -143,11 +146,12 @@ const DATA = {
     projects: [
       {
         name: 'Advertising data reporting tool',
-        tools: ['Golang, Python 2/3, gRPC, CloudSQL (Postgres), Kubernetes, GCP'],
+        tools: ['Golang, Python 3, Kubernetes, Flask, GCP'],
         achievements: [
           'Adapt existing product to work with the new APIs',
           'Reduced performance issues and made applications more reliable and stable',
           'Moved project to <b>Python 3</b> implemented various improvements of existing codebase and bugfixing',
+          'Completely rewritten old monolith application to event-based approach on <b>Pub/Sub + Cloud Functions</b>',
         ],
       },
       {
