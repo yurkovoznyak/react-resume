@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from "prop-types";
 import Companies from './Companies';
 import MainHeading from './MainHeading';
 import Project from './Project';

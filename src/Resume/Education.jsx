@@ -1,20 +1,21 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from "prop-types";
 import SidebarHeading from './SidebarHeading';
 
-const Education = ({ universities }) => (
-  <section style={style.main}>
-    <SidebarHeading align="left">+ EDUCATION</SidebarHeading>
-    {universities.map(university => (
-      <div style={{ paddingBottom: 10 }}>
-        <div style={{
-          ...style.text,
-          fontWeight: 'bold',
-        }}>{university.name}</div>
-        <div>{university.degree}</div>
-        <div style={style.text}>{university.duration}</div>
-      </div>
-    ))}
-  </section>
+const Education = ({universities}) => (
+    <section style={style.main}>
+      <SidebarHeading align="left">+ EDUCATION</SidebarHeading>
+      {universities.map(university => (
+          <div key={university.duration} style={{paddingBottom: 10}}>
+            <div style={{
+              ...style.text,
+              fontWeight: 'bold',
+            }}>{university.name}</div>
+            <div>{university.degree}</div>
+            <div style={style.text}>{university.duration}</div>
+          </div>
+      ))}
+    </section>
 );
 
 const style = {

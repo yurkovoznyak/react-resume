@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from "prop-types";
 import Languages from './Languages';
 import SidebarList from './SidebarList';
 import ContactLinks from './ContactLinks';
